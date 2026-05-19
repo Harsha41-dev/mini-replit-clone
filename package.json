@@ -1,0 +1,44 @@
+{
+  "name": "mini-replit-clone",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:frontend && npm run build:server",
+    "build:frontend": "vite build --config frontend/vite.config.js",
+    "build:server": "tsc",
+    "start": "node dist/server.js",
+    "dev": "nodemon src/server.ts",
+    "dev:frontend": "vite --config frontend/vite.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "A simple full stack Replit style clone built on an Express TypeScript starter.",
+  "dependencies": {
+    "@monaco-editor/react": "^4.7.0",
+    "@types/archiver": "^7.0.0",
+    "archiver": "^7.0.1",
+    "better-sqlite3": "^12.10.0",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "monaco-editor": "^0.53.0",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "uuid": "^11.1.0",
+    "winston": "^3.17.0",
+    "winston-daily-rotate-file": "^5.0.0",
+    "ws": "^8.20.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.14.0",
+    "@types/ws": "^8.18.1",
+    "@vitejs/plugin-react": "^6.0.2",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "vite": "^8.0.13"
+  }
+}
